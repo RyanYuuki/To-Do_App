@@ -1,3 +1,7 @@
+:root {
+    --clr--primary-color: #ae9cff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,10 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: url("blurry-gradient-haikei.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background: var(--clr--primary-color);
 }
 
 .Main {
@@ -42,7 +43,7 @@ button {
     padding: 10px 30px;
     border-radius: 20px;
     border: none;
-    background: orangered;
+    background: var(--clr--primary-color);
     right: 5%;
     z-index: 99;
     color: white;
@@ -97,7 +98,7 @@ button {
 
 .checkBox:active {
     color: white;
-    background-color: rgb(234, 87, 33);
+    background-color: var(--clr--primary-color);
 }
 
 ion-icon {
