@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>To-Do App</title>
+  </head>
+  <body>
+    <div class="Main">
+      <h1 class="Title">To-Do</h1>
+      <div class="InputBox">
+        <input id="input" type="text" placeholder="Add Your Task"/>
+        <button onclick="createTask()">Add</button>
+      </div>
+
+      <div class="Tasks">
+        <div class="Task">
+            <div class="checkBox"><ion-icon name="checkmark-outline"></ion-icon></div>
+            <div class="sampleTask">Learn JS Project</div>
+            <div class="removeTask"><ion-icon name="close-outline"></ion-icon></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
