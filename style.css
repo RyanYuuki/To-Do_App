@@ -1,3 +1,15 @@
+@media screen and (max-width: 900px) {
+    .Main {
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Main {
+        transform: scale(0.8);
+    }
+}
+
 :root {
     --clr--primary-color: #ae9cff;
 }
@@ -23,7 +35,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: rgb(255,255,255,0.1);
-    width: 500px;
+    width: 450px;
     height: 500px;
     padding: 10px 20px;
     border: 1px solid;
@@ -37,9 +49,9 @@ input[type="text"] {
     width: 80%;
     border-radius: 20px;
     padding: 10px 20px;
-    border: 1px solid;
+    border: none;
     outline: none;
-    background: transparent;
+    background: rgb(0,0,0,0.3);
     color: white;
 }
 
@@ -80,8 +92,8 @@ button {
     align-items: center;
     gap: 10px;
     overflow-y: scroll;
-    border: 1px solid;
     border-radius: 10px;
+    background-color: rgb(0,0,0,0.1);
 }
 
 .Task {
@@ -116,4 +128,9 @@ button {
 
 ion-icon {
     transform: scale(1.5);
+}
+
+.removeTask:active {
+    color: white;
+    background-color: tomato;
 }
